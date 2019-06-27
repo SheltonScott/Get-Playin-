@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ability Scores View Controller-->
+        <scene sceneID="9KM-mG-2hh">
+            <objects>
+                <viewController storyboardIdentifier="abilityScoresStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hpu-Nq-cAB" customClass="AbilityScoresViewController" customModule="Get_Playin_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WJ5-e9-pBj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FE3-67-G55" customClass="DesignableView" customModule="Get_Playin_" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0r-jK-Rpl" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="515" width="309" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="99" id="2FS-Jm-Ioa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                        <state key="normal" title="Save Ability Scores">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="SaveAbilityScoresButtonTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="LCo-AX-5yo"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" text="Charisma" borderStyle="roundedRect" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Drb-fp-gk6" customClass="DesignableTextField" customModule="Get_Playin_" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="419" width="165" height="30"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="E6E-5w-0lZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="Wisdom" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y9w-Zo-TSe">
+                                        <rect key="frame" x="33" y="356" width="165" height="30"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="HP0-Pc-V42"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="Intelligence" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="piT-cp-xRU">
+                                        <rect key="frame" x="35" y="293" width="165" height="30"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="MDf-80-9sN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="Constitution" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4b-D9-Rhv">
+                                        <rect key="frame" x="33" y="230" width="165" height="30"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="LYC-Tw-Fma"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="Dexterity" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A5B-nx-j3b">
+                                        <rect key="frame" x="33" y="167" width="165" height="30"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="aqp-n0-krJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="Strength" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ylH-kC-jCt">
+                                        <rect key="frame" x="33" y="104" width="165" height="30"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="XeM-aa-a9O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvd-wx-kTb" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                        <rect key="frame" x="231" y="419" width="99" height="30"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="SgD-Xm-jDg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                        <state key="normal" title="Tap!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="CharismaScoreTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="ghI-Sg-fKG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqe-kK-B6Q" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                        <rect key="frame" x="231" y="356" width="99" height="30"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="IE6-al-gLk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                        <state key="normal" title="Tap!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="WisdomScoreTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="jqb-Zl-C76"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJB-ol-SxN" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                        <rect key="frame" x="233" y="293" width="99" height="30"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="Niv-Ue-zUI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                        <state key="normal" title="Tap!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="IntelligenceScoreTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="1MQ-Dt-b1g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71K-4Y-xYv" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                        <rect key="frame" x="231" y="230" width="99" height="30"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="ZrU-Nt-3qG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                        <state key="normal" title="Tap!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ConstitutionScoreTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="OFd-ah-Mzx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cga-zx-Cyv" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                        <rect key="frame" x="231" y="167" width="99" height="30"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="h7m-YS-rA4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                        <state key="normal" title="Tap!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="DexterityScoreTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="rGX-Ph-2x8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5c-Ny-0NG" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                        <rect key="frame" x="231" y="104" width="99" height="30"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="iUT-H9-goJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                        <state key="normal" title="Tap!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="StrengthScoreTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="9Du-wG-tCx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="A5B-nx-j3b" firstAttribute="leading" secondItem="FE3-67-G55" secondAttribute="leading" constant="33" id="0BI-Tt-oVO"/>
+                                    <constraint firstItem="cga-zx-Cyv" firstAttribute="leading" secondItem="A5B-nx-j3b" secondAttribute="trailing" constant="33" id="0kN-Pi-x2y"/>
+                                    <constraint firstItem="piT-cp-xRU" firstAttribute="leading" secondItem="FE3-67-G55" secondAttribute="leading" constant="35" id="1RN-YE-tPn"/>
+                                    <constraint firstItem="Y9w-Zo-TSe" firstAttribute="top" secondItem="piT-cp-xRU" secondAttribute="bottom" constant="33" id="1pD-2A-xyL"/>
+                                    <constraint firstItem="cga-zx-Cyv" firstAttribute="top" secondItem="y5c-Ny-0NG" secondAttribute="bottom" constant="33" id="3cp-N7-Phg"/>
+                                    <constraint firstItem="ylH-kC-jCt" firstAttribute="leading" secondItem="FE3-67-G55" secondAttribute="leading" constant="33" id="DYv-6P-s1M"/>
+                                    <constraint firstAttribute="trailing" secondItem="X0r-jK-Rpl" secondAttribute="trailing" constant="33" id="EeR-sY-I80"/>
+                                    <constraint firstItem="A5B-nx-j3b" firstAttribute="top" secondItem="ylH-kC-jCt" secondAttribute="bottom" constant="33" id="OH6-1R-lbU"/>
+                                    <constraint firstItem="Drb-fp-gk6" firstAttribute="top" secondItem="Y9w-Zo-TSe" secondAttribute="bottom" constant="33" id="Phs-CJ-B0H"/>
+                                    <constraint firstItem="X0r-jK-Rpl" firstAttribute="leading" secondItem="FE3-67-G55" secondAttribute="leading" constant="33" id="QNp-ht-Zfg"/>
+                                    <constraint firstItem="Aqe-kK-B6Q" firstAttribute="leading" secondItem="Y9w-Zo-TSe" secondAttribute="trailing" constant="33" id="RBo-hq-KpG"/>
+                                    <constraint firstItem="y5c-Ny-0NG" firstAttribute="leading" secondItem="ylH-kC-jCt" secondAttribute="trailing" constant="33" id="RzV-eg-FFe"/>
+                                    <constraint firstItem="pJB-ol-SxN" firstAttribute="top" secondItem="71K-4Y-xYv" secondAttribute="bottom" constant="33" id="SJf-bM-iV3"/>
+                                    <constraint firstItem="piT-cp-xRU" firstAttribute="top" secondItem="j4b-D9-Rhv" secondAttribute="bottom" constant="33" id="TU7-VJ-Q4G"/>
+                                    <constraint firstItem="71K-4Y-xYv" firstAttribute="top" secondItem="cga-zx-Cyv" secondAttribute="bottom" constant="33" id="YXi-9i-F3J"/>
+                                    <constraint firstItem="j4b-D9-Rhv" firstAttribute="leading" secondItem="FE3-67-G55" secondAttribute="leading" constant="33" id="ZX4-tn-v7Z"/>
+                                    <constraint firstItem="pJB-ol-SxN" firstAttribute="leading" secondItem="piT-cp-xRU" secondAttribute="trailing" constant="33" id="Zqk-2R-nka"/>
+                                    <constraint firstItem="Aqe-kK-B6Q" firstAttribute="top" secondItem="pJB-ol-SxN" secondAttribute="bottom" constant="33" id="bWr-EP-wP0"/>
+                                    <constraint firstItem="X0r-jK-Rpl" firstAttribute="top" secondItem="uvd-wx-kTb" secondAttribute="bottom" constant="66" id="ddH-Xh-nfm"/>
+                                    <constraint firstItem="uvd-wx-kTb" firstAttribute="leading" secondItem="Drb-fp-gk6" secondAttribute="trailing" constant="33" id="eN2-P3-l8M"/>
+                                    <constraint firstItem="X0r-jK-Rpl" firstAttribute="top" secondItem="Drb-fp-gk6" secondAttribute="bottom" constant="66" id="eh6-p5-oO1"/>
+                                    <constraint firstItem="Drb-fp-gk6" firstAttribute="leading" secondItem="FE3-67-G55" secondAttribute="leading" constant="33" id="gmG-1D-0yY"/>
+                                    <constraint firstItem="uvd-wx-kTb" firstAttribute="top" secondItem="Aqe-kK-B6Q" secondAttribute="bottom" constant="33" id="hp7-TY-ZsP"/>
+                                    <constraint firstItem="Y9w-Zo-TSe" firstAttribute="leading" secondItem="FE3-67-G55" secondAttribute="leading" constant="33" id="kwE-gs-QTx"/>
+                                    <constraint firstAttribute="bottom" secondItem="X0r-jK-Rpl" secondAttribute="bottom" constant="33" id="nET-DY-GvL"/>
+                                    <constraint firstItem="j4b-D9-Rhv" firstAttribute="top" secondItem="A5B-nx-j3b" secondAttribute="bottom" constant="33" id="tsT-hk-IYQ"/>
+                                    <constraint firstItem="71K-4Y-xYv" firstAttribute="leading" secondItem="j4b-D9-Rhv" secondAttribute="trailing" constant="33" id="vEB-rK-Nhg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.89019607840000003" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.23137254900000001" green="0.1333333333" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8bO-4F-nth" firstAttribute="trailing" secondItem="FE3-67-G55" secondAttribute="trailing" id="5WD-TF-F7A"/>
+                            <constraint firstItem="FE3-67-G55" firstAttribute="leading" secondItem="8bO-4F-nth" secondAttribute="leading" id="beU-ye-89u"/>
+                            <constraint firstItem="FE3-67-G55" firstAttribute="top" secondItem="8bO-4F-nth" secondAttribute="top" id="iti-Iz-4b8"/>
+                            <constraint firstItem="8bO-4F-nth" firstAttribute="bottom" secondItem="FE3-67-G55" secondAttribute="bottom" id="mHD-Y2-2RX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8bO-4F-nth"/>
+                    </view>
+                    <connections>
+                        <outlet property="CharismaScore" destination="uvd-wx-kTb" id="jRw-qc-7gn"/>
+                        <outlet property="ConstitutionScore" destination="71K-4Y-xYv" id="bGE-sp-dOn"/>
+                        <outlet property="DexterityScore" destination="cga-zx-Cyv" id="kSu-Fz-2MJ"/>
+                        <outlet property="IntelligenceScore" destination="pJB-ol-SxN" id="4tq-gb-lee"/>
+                        <outlet property="MainView" destination="FE3-67-G55" id="LBO-f7-zor"/>
+                        <outlet property="PopoverView" destination="d1G-cE-ynB" id="Nw2-jI-hZB"/>
+                        <outlet property="ScoreFive" destination="oA4-8o-Mfb" id="sie-xY-pBt"/>
+                        <outlet property="ScoreFour" destination="Emh-kK-p6N" id="VIH-Zr-OmZ"/>
+                        <outlet property="ScoreOne" destination="RMA-hg-4FS" id="Hfp-Vp-QeK"/>
+                        <outlet property="ScoreSix" destination="ks7-5k-49o" id="Cim-tK-TYk"/>
+                        <outlet property="ScoreThree" destination="jRj-Sc-jdw" id="aE6-3J-87n"/>
+                        <outlet property="ScoreTwo" destination="KXg-Is-ibt" id="iya-f3-DYk"/>
+                        <outlet property="StrengthScore" destination="y5c-Ny-0NG" id="jIR-6G-gqB"/>
+                        <outlet property="WisdomScore" destination="Aqe-kK-B6Q" id="Hho-AZ-pZn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RUZ-vs-Dz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="d1G-cE-ynB" userLabel="Popover View" customClass="DesignableView" customModule="Get_Playin_" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emh-kK-p6N" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="25" y="78" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="ScoreFourTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="Ujw-MP-Gcr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA4-8o-Mfb" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="106" y="78" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="ScoreFiveTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="NZN-oR-KAy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ks7-5k-49o" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="187" y="78" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="ScoreSixTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="9IG-Di-HRh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMA-hg-4FS" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="25" y="20" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="ScoreOneTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="adH-aV-1aL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXg-Is-ibt" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="106" y="20" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="ScoreTwoTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="zVA-H5-bGg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRj-Sc-jdw" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="187" y="20" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="ScoreThreeTapped:" destination="hpu-Nq-cAB" eventType="touchUpInside" id="ui3-XY-0Uh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="b3z-bR-fP8"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                            <color key="value" red="0.89019607840000003" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                            <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-188" y="119.1904047976012"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dice View Controller-->
+        <scene sceneID="WnH-SH-rAm">
+            <objects>
+                <viewController storyboardIdentifier="diceStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WKe-BV-t6Y" customClass="DiceViewController" customModule="Get_Playin_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kQj-bf-muQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lht-ne-1LO" customClass="DesignableView" customModule="Get_Playin_" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvV-7g-4mE" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="515" width="309" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="99" id="Bft-4c-AY4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="RollButtonPressed:" destination="WKe-BV-t6Y" eventType="touchUpInside" id="1Vd-DG-RwB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rga-Bm-wQk" userLabel="ButtonOne">
+                                        <rect key="frame" x="33" y="383" width="99" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="99" id="YXe-OW-1h7"/>
+                                            <constraint firstAttribute="width" constant="99" id="ZmG-fP-smv"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="side_1"/>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbZ-VD-at6" userLabel="ButtonTwo">
+                                        <rect key="frame" x="243" y="383" width="99" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="99" id="2Cs-R4-zWr"/>
+                                            <constraint firstAttribute="width" constant="99" id="NBL-jZ-GPM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="side_2"/>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pe-uO-GTd" userLabel="ButtonThree">
+                                        <rect key="frame" x="33" y="251" width="99" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="f8N-aW-GfK"/>
+                                            <constraint firstAttribute="height" constant="99" id="oO5-vQ-VPL"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="side_3"/>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue6-bU-GrL" userLabel="ButtonFour">
+                                        <rect key="frame" x="243" y="251" width="99" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="WH6-3O-lAa"/>
+                                            <constraint firstAttribute="height" constant="99" id="oxQ-Bx-jqQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="side_4"/>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sH-NE-SdR" userLabel="ButtonFive">
+                                        <rect key="frame" x="33" y="119" width="99" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="ezI-rk-wBB"/>
+                                            <constraint firstAttribute="height" constant="99" id="wZx-lz-c6J"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="side_5"/>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9j-Zt-AG1" userLabel="ButtonSix">
+                                        <rect key="frame" x="243" y="119" width="99" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="diS-sA-tNv"/>
+                                            <constraint firstAttribute="height" constant="99" id="xnO-4T-6KE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="side_6"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ZvV-7g-4mE" firstAttribute="leading" secondItem="Lht-ne-1LO" secondAttribute="leading" constant="33" id="23J-xr-eQ3"/>
+                                    <constraint firstItem="0Pe-uO-GTd" firstAttribute="leading" secondItem="Lht-ne-1LO" secondAttribute="leading" constant="33" id="BH5-tG-l8u"/>
+                                    <constraint firstItem="KbZ-VD-at6" firstAttribute="top" secondItem="ue6-bU-GrL" secondAttribute="bottom" constant="33" id="C1f-rE-k4Z"/>
+                                    <constraint firstItem="ZvV-7g-4mE" firstAttribute="top" secondItem="KbZ-VD-at6" secondAttribute="bottom" constant="33" id="KmL-ru-ji9"/>
+                                    <constraint firstItem="Rga-Bm-wQk" firstAttribute="leading" secondItem="Lht-ne-1LO" secondAttribute="leading" constant="33" id="Rcs-Ax-BMh"/>
+                                    <constraint firstAttribute="trailing" secondItem="ue6-bU-GrL" secondAttribute="trailing" constant="33" id="VtK-c6-7pz"/>
+                                    <constraint firstItem="0Pe-uO-GTd" firstAttribute="top" secondItem="2sH-NE-SdR" secondAttribute="bottom" constant="33" id="aVZ-fJ-XBw"/>
+                                    <constraint firstAttribute="trailing" secondItem="KbZ-VD-at6" secondAttribute="trailing" constant="33" id="dro-Fs-7UV"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZvV-7g-4mE" secondAttribute="bottom" constant="33" id="iIs-rE-R9a"/>
+                                    <constraint firstAttribute="trailing" secondItem="F9j-Zt-AG1" secondAttribute="trailing" constant="33" id="lEQ-2u-X6i"/>
+                                    <constraint firstItem="ue6-bU-GrL" firstAttribute="top" secondItem="F9j-Zt-AG1" secondAttribute="bottom" constant="33" id="mC4-Tb-C6w"/>
+                                    <constraint firstItem="ZvV-7g-4mE" firstAttribute="top" secondItem="Rga-Bm-wQk" secondAttribute="bottom" constant="33" id="qhd-26-Oqi"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZvV-7g-4mE" secondAttribute="trailing" constant="33" id="xLa-f7-ShL"/>
+                                    <constraint firstItem="Rga-Bm-wQk" firstAttribute="top" secondItem="0Pe-uO-GTd" secondAttribute="bottom" constant="33" id="yF4-yg-mGa"/>
+                                    <constraint firstItem="2sH-NE-SdR" firstAttribute="leading" secondItem="Lht-ne-1LO" secondAttribute="leading" constant="33" id="yVl-EU-H40"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.89019607840000003" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.23137254900000001" green="0.1333333333" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lht-ne-1LO" firstAttribute="leading" secondItem="KUy-iq-cZY" secondAttribute="leading" id="COg-ho-8jZ"/>
+                            <constraint firstItem="KUy-iq-cZY" firstAttribute="trailing" secondItem="Lht-ne-1LO" secondAttribute="trailing" id="eJP-Oq-JbJ"/>
+                            <constraint firstItem="KUy-iq-cZY" firstAttribute="bottom" secondItem="Lht-ne-1LO" secondAttribute="bottom" id="kq2-Dq-Yow"/>
+                            <constraint firstItem="Lht-ne-1LO" firstAttribute="top" secondItem="KUy-iq-cZY" secondAttribute="top" id="pCq-S1-gAx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KUy-iq-cZY"/>
+                    </view>
+                    <connections>
+                        <outlet property="DiceImageFive" destination="2sH-NE-SdR" id="m6F-ex-YJ6"/>
+                        <outlet property="DiceImageFour" destination="ue6-bU-GrL" id="dr2-hb-FpN"/>
+                        <outlet property="DiceImageOne" destination="Rga-Bm-wQk" id="Sw5-hL-F4c"/>
+                        <outlet property="DiceImageSix" destination="F9j-Zt-AG1" id="fyc-lH-hIv"/>
+                        <outlet property="DiceImageThree" destination="0Pe-uO-GTd" id="jRx-lC-dKG"/>
+                        <outlet property="DiceImageTwo" destination="KbZ-VD-at6" id="7Yl-Ho-HaA"/>
+                        <outlet property="RollButton" destination="ZvV-7g-4mE" id="rSb-Kc-amd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vhz-w2-vTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="164"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="side_1" width="512" height="512"/>
+        <image name="side_2" width="512" height="512"/>
+        <image name="side_3" width="512" height="512"/>
+        <image name="side_4" width="512" height="512"/>
+        <image name="side_5" width="512" height="512"/>
+        <image name="side_6" width="512" height="512"/>
+    </resources>
+</document>

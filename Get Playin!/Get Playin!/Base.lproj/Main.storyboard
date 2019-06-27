@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Get_Playin_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainStoryboard" id="BYZ-38-t0r" customClass="MainViewController" customModule="Get_Playin_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j2Q-qi-M5Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -38,24 +38,27 @@
                                                 <color key="value" red="0.33725490196078434" green="0.19215686274509805" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="NewCharacterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k0X-Oe-W02"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCT-2A-WgW" customClass="DesignableView" customModule="Get_Playin_" customModuleProvider="target">
                                         <rect key="frame" x="33" y="33" width="309" height="231"/>
                                         <subviews>
-                                            <textField opaque="NO" alpha="0.25" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ErV-Iw-2gp" customClass="DesignableTextField" customModule="Get_Playin_" customModuleProvider="target">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.25" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvE-51-JwV">
                                                 <rect key="frame" x="33" y="0.0" width="243" height="231"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="ErV-Iw-2gp" firstAttribute="leading" secondItem="qCT-2A-WgW" secondAttribute="leading" constant="33" id="5vg-h3-z3Y"/>
-                                            <constraint firstItem="ErV-Iw-2gp" firstAttribute="top" secondItem="qCT-2A-WgW" secondAttribute="top" id="AnG-Jc-7pw"/>
+                                            <constraint firstItem="UvE-51-JwV" firstAttribute="top" secondItem="qCT-2A-WgW" secondAttribute="top" id="5Tq-gp-wh8"/>
+                                            <constraint firstAttribute="trailing" secondItem="UvE-51-JwV" secondAttribute="trailing" constant="33" id="AmM-ND-Eke"/>
+                                            <constraint firstItem="UvE-51-JwV" firstAttribute="leading" secondItem="qCT-2A-WgW" secondAttribute="leading" constant="33" id="FdP-lz-PMl"/>
                                             <constraint firstAttribute="height" constant="231" id="Fjt-Hw-rqk"/>
-                                            <constraint firstAttribute="trailing" secondItem="ErV-Iw-2gp" secondAttribute="trailing" constant="33" id="Mh3-2e-p7o"/>
-                                            <constraint firstAttribute="bottom" secondItem="ErV-Iw-2gp" secondAttribute="bottom" id="sdL-ND-mJ9"/>
+                                            <constraint firstAttribute="bottom" secondItem="UvE-51-JwV" secondAttribute="bottom" id="agB-yG-vCa"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
@@ -95,6 +98,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WVF-Na-Szm"/>
                     </view>
+                    <connections>
+                        <outlet property="NewCharacterButton" destination="aQm-mD-dnp" id="qB7-Li-YbK"/>
+                        <outlet property="SnapshotTextView" destination="UvE-51-JwV" id="un4-nF-aah"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
