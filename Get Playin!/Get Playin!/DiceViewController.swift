@@ -9,12 +9,20 @@
 import UIKit
 
 struct defaultsKeys {
-    static let keyOne = "keyOne"
-    static let keyTwo = "keyTwo"
-    static let keyThree = "keyThree"
-    static let keyFour = "keyFour"
-    static let keyFive = "keyFive"
-    static let keySix = "keySix"
+    static let keyScoreOne = "keyScoreOne"
+    static let keyScoreTwo = "keyScoreTwo"
+    static let keyScoreThree = "keyScoreThree"
+    static let keyScoreFour = "keyScoreFour"
+    static let keyScoreFive = "keyScoreFive"
+    static let keyScoreSix = "keyScoreSix"
+    static let keyAbilityOne = "keyAbilityOne"
+    static let keyAbilityTwo = "keyAbilityTwo"
+    static let keyAbilityThree = "keyAbilityThree"
+    static let keyAbilityFour = "keyAbilityFour"
+    static let keyAbilityFive = "keyAbilityFive"
+    static let keyAbilitySix = "keyAbilitySix"
+    static let keyRace = "keyRace"
+    static let keyClass = "keyClass"
 }
 
 class DiceViewController: UIViewController {
@@ -73,11 +81,11 @@ class DiceViewController: UIViewController {
                     third = abilityScores[i]
                 }
             }
-            print("Roll \(roll) first = \(first)")
-            print("Roll \(roll) second = \(second)")
-            print("Roll \(roll) third = \(third)")
+            //print("Roll \(roll) first = \(first)")
+            //print("Roll \(roll) second = \(second)")
+            //print("Roll \(roll) third = \(third)")
             abilityScoreOne += first + second + third
-            print("Roll \(roll) abilityScoreOne = \(abilityScoreOne)")
+            //print("Roll \(roll) abilityScoreOne = \(abilityScoreOne)")
             abilityScores.removeAll()
             roll += 1
             RollButton.setTitle("Tap for \(roll)nd Roll!", for: .normal)
@@ -100,11 +108,11 @@ class DiceViewController: UIViewController {
                     third = abilityScores[i]
                 }
             }
-            print("Roll \(roll) first = \(first)")
-            print("Roll \(roll) second = \(second)")
-            print("Roll \(roll) third = \(third)")
+            //print("Roll \(roll) first = \(first)")
+            //print("Roll \(roll) second = \(second)")
+            //print("Roll \(roll) third = \(third)")
             abilityScoreTwo += first + second + third
-            print("Roll \(roll) abilityScoreTwo = \(abilityScoreTwo)")
+            //print("Roll \(roll) abilityScoreTwo = \(abilityScoreTwo)")
             abilityScores.removeAll()
             roll += 1
             RollButton.setTitle("Tap for \(roll)rd Roll!", for: .normal)
@@ -127,11 +135,11 @@ class DiceViewController: UIViewController {
                     third = abilityScores[i]
                 }
             }
-            print("Roll \(roll) first = \(first)")
-            print("Roll \(roll) second = \(second)")
-            print("Roll \(roll) third = \(third)")
+            //print("Roll \(roll) first = \(first)")
+            //print("Roll \(roll) second = \(second)")
+            //print("Roll \(roll) third = \(third)")
             abilityScoreThree += first + second + third
-            print("Roll \(roll) abilityScoreTwo = \(abilityScoreThree)")
+            //print("Roll \(roll) abilityScoreTwo = \(abilityScoreThree)")
             abilityScores.removeAll()
             roll += 1
             RollButton.setTitle("Tap for \(roll)th Roll!", for: .normal)
@@ -154,11 +162,11 @@ class DiceViewController: UIViewController {
                     third = abilityScores[i]
                 }
             }
-            print("Roll \(roll) first = \(first)")
-            print("Roll \(roll) second = \(second)")
-            print("Roll \(roll) third = \(third)")
+            //print("Roll \(roll) first = \(first)")
+            //print("Roll \(roll) second = \(second)")
+            //print("Roll \(roll) third = \(third)")
             abilityScoreFour += first + second + third
-            print("Roll \(roll) abilityScoreFour = \(abilityScoreFour)")
+            //print("Roll \(roll) abilityScoreFour = \(abilityScoreFour)")
             abilityScores.removeAll()
             roll += 1
             RollButton.setTitle("Tap for \(roll)th Roll!", for: .normal)
@@ -181,11 +189,11 @@ class DiceViewController: UIViewController {
                     third = abilityScores[i]
                 }
             }
-            print("Roll \(roll) first = \(first)")
-            print("Roll \(roll) second = \(second)")
-            print("Roll \(roll) third = \(third)")
+            //print("Roll \(roll) first = \(first)")
+            //print("Roll \(roll) second = \(second)")
+            //print("Roll \(roll) third = \(third)")
             abilityScoreFive += first + second + third
-            print("Roll \(roll) abilityScoreFive = \(abilityScoreTwo)")
+            //print("Roll \(roll) abilityScoreFive = \(abilityScoreTwo)")
             abilityScores.removeAll()
             roll += 1
             RollButton.setTitle("Tap for \(roll)th Roll!", for: .normal)
@@ -208,19 +216,19 @@ class DiceViewController: UIViewController {
                     third = abilityScores[i]
                 }
             }
-            print("Roll \(roll) first = \(first)")
-            print("Roll \(roll) second = \(second)")
-            print("Roll \(roll) third = \(third)")
+            //print("Roll \(roll) first = \(first)")
+            //print("Roll \(roll) second = \(second)")
+            //print("Roll \(roll) third = \(third)")
             abilityScoreSix += first + second + third
-            print("Roll \(roll) abilityScoreSix = \(abilityScoreSix)")
+            //print("Roll \(roll) abilityScoreSix = \(abilityScoreSix)")
             abilityScores.removeAll()
             let defaults = UserDefaults.standard
-            defaults.set(abilityScoreOne, forKey: defaultsKeys.keyOne)
-            defaults.set(abilityScoreTwo, forKey: defaultsKeys.keyTwo)
-            defaults.set(abilityScoreThree, forKey: defaultsKeys.keyThree)
-            defaults.set(abilityScoreFour, forKey: defaultsKeys.keyFour)
-            defaults.set(abilityScoreFive, forKey: defaultsKeys.keyFive)
-            defaults.set(abilityScoreSix, forKey: defaultsKeys.keySix)
+            defaults.set(abilityScoreOne, forKey: defaultsKeys.keyScoreOne)
+            defaults.set(abilityScoreTwo, forKey: defaultsKeys.keyScoreTwo)
+            defaults.set(abilityScoreThree, forKey: defaultsKeys.keyScoreThree)
+            defaults.set(abilityScoreFour, forKey: defaultsKeys.keyScoreFour)
+            defaults.set(abilityScoreFive, forKey: defaultsKeys.keyScoreFive)
+            defaults.set(abilityScoreSix, forKey: defaultsKeys.keyScoreSix)
             let storyboard = UIStoryboard(name: "AbilityScores", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "abilityScoresStoryboard") as UIViewController
             present(vc, animated: true, completion: nil)

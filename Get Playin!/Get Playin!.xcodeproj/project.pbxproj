@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D212F37022BEEF6D004248FD /* Dice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D212F36F22BEEF6D004248FD /* Dice.storyboard */; };
+		D2303EC422C6BD2000265541 /* Race-Class.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2303EC322C6BD2000265541 /* Race-Class.storyboard */; };
+		D2303EC622C6BD3E00265541 /* Race-ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2303EC522C6BD3E00265541 /* Race-ClassViewController.swift */; };
+		D23E10F322C6EEC00000C3AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D23E10F222C6EEC00000C3AF /* GoogleService-Info.plist */; };
 		D26CFA4F22C0166700EB0D4C /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26CFA4E22C0166700EB0D4C /* DiceViewController.swift */; };
 		D26CFA5122C0350F00EB0D4C /* AbilityScores.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26CFA5022C0350F00EB0D4C /* AbilityScores.storyboard */; };
 		D26CFA5322C0360F00EB0D4C /* AbilityScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26CFA5222C0360F00EB0D4C /* AbilityScoresViewController.swift */; };
+		D2B3CCA122C68C2C008E5FC1 /* CharacterSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B3CCA022C68C2B008E5FC1 /* CharacterSheetViewController.swift */; };
+		D2B3CCA322C68C53008E5FC1 /* CharacterSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B3CCA222C68C53008E5FC1 /* CharacterSheet.storyboard */; };
 		D2BC84AD22A6D5F40056F041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC84AC22A6D5F40056F041 /* AppDelegate.swift */; };
 		D2BC84AF22A6D5F40056F041 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC84AE22A6D5F40056F041 /* MainViewController.swift */; };
 		D2BC84B222A6D5F40056F041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BC84B022A6D5F40056F041 /* Main.storyboard */; };
@@ -21,9 +26,14 @@
 
 /* Begin PBXFileReference section */
 		D212F36F22BEEF6D004248FD /* Dice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dice.storyboard; sourceTree = "<group>"; };
+		D2303EC322C6BD2000265541 /* Race-Class.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Race-Class.storyboard"; sourceTree = "<group>"; };
+		D2303EC522C6BD3E00265541 /* Race-ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Race-ClassViewController.swift"; sourceTree = "<group>"; };
+		D23E10F222C6EEC00000C3AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D26CFA4E22C0166700EB0D4C /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 		D26CFA5022C0350F00EB0D4C /* AbilityScores.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AbilityScores.storyboard; sourceTree = "<group>"; };
 		D26CFA5222C0360F00EB0D4C /* AbilityScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityScoresViewController.swift; sourceTree = "<group>"; };
+		D2B3CCA022C68C2B008E5FC1 /* CharacterSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSheetViewController.swift; sourceTree = "<group>"; };
+		D2B3CCA222C68C53008E5FC1 /* CharacterSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterSheet.storyboard; sourceTree = "<group>"; };
 		D2BC84A922A6D5F40056F041 /* Get Playin!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Playin!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BC84AC22A6D5F40056F041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2BC84AE22A6D5F40056F041 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -65,16 +75,21 @@
 			isa = PBXGroup;
 			children = (
 				D2BC84AC22A6D5F40056F041 /* AppDelegate.swift */,
-				D2BC84AE22A6D5F40056F041 /* MainViewController.swift */,
-				D2BC84B022A6D5F40056F041 /* Main.storyboard */,
-				D2BC84B322A6D5F50056F041 /* Assets.xcassets */,
-				D2BC84B522A6D5F50056F041 /* LaunchScreen.storyboard */,
-				D2BC84B822A6D5F50056F041 /* Info.plist */,
 				D2C9E7F822BC6DD600FA1958 /* DesignableView.swift */,
+				D2BC84B522A6D5F50056F041 /* LaunchScreen.storyboard */,
+				D2BC84B022A6D5F40056F041 /* Main.storyboard */,
+				D2BC84AE22A6D5F40056F041 /* MainViewController.swift */,
 				D212F36F22BEEF6D004248FD /* Dice.storyboard */,
 				D26CFA4E22C0166700EB0D4C /* DiceViewController.swift */,
 				D26CFA5022C0350F00EB0D4C /* AbilityScores.storyboard */,
 				D26CFA5222C0360F00EB0D4C /* AbilityScoresViewController.swift */,
+				D2303EC322C6BD2000265541 /* Race-Class.storyboard */,
+				D2303EC522C6BD3E00265541 /* Race-ClassViewController.swift */,
+				D2B3CCA222C68C53008E5FC1 /* CharacterSheet.storyboard */,
+				D2B3CCA022C68C2B008E5FC1 /* CharacterSheetViewController.swift */,
+				D2BC84B322A6D5F50056F041 /* Assets.xcassets */,
+				D2BC84B822A6D5F50056F041 /* Info.plist */,
+				D23E10F222C6EEC00000C3AF /* GoogleService-Info.plist */,
 			);
 			path = "Get Playin!";
 			sourceTree = "<group>";
@@ -138,8 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2BC84B722A6D5F50056F041 /* LaunchScreen.storyboard in Resources */,
+				D23E10F322C6EEC00000C3AF /* GoogleService-Info.plist in Resources */,
 				D2BC84B422A6D5F50056F041 /* Assets.xcassets in Resources */,
+				D2B3CCA322C68C53008E5FC1 /* CharacterSheet.storyboard in Resources */,
 				D26CFA5122C0350F00EB0D4C /* AbilityScores.storyboard in Resources */,
+				D2303EC422C6BD2000265541 /* Race-Class.storyboard in Resources */,
 				D2BC84B222A6D5F40056F041 /* Main.storyboard in Resources */,
 				D212F37022BEEF6D004248FD /* Dice.storyboard in Resources */,
 			);
@@ -152,6 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B3CCA122C68C2C008E5FC1 /* CharacterSheetViewController.swift in Sources */,
+				D2303EC622C6BD3E00265541 /* Race-ClassViewController.swift in Sources */,
 				D26CFA5322C0360F00EB0D4C /* AbilityScoresViewController.swift in Sources */,
 				D2BC84AF22A6D5F40056F041 /* MainViewController.swift in Sources */,
 				D2BC84AD22A6D5F40056F041 /* AppDelegate.swift in Sources */,

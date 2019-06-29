@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Race Class View Controller-->
+        <scene sceneID="3mY-PH-eqz">
+            <objects>
+                <viewController storyboardIdentifier="raceClassStoryboard" id="lUR-8B-QDg" customClass="RaceClassViewController" customModule="Get_Playin_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="12W-g7-8EU" customClass="DesignableView" customModule="Get_Playin_" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoI-du-yVi" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                <rect key="frame" x="33" y="53" width="309" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="mqe-89-Gah"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="Choose Character Race">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CI3-yR-ele">
+                                <rect key="frame" x="0.0" y="102" width="375" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="2G3-R2-d8B"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="lUR-8B-QDg" id="HOg-Lo-z6S"/>
+                                    <outlet property="delegate" destination="lUR-8B-QDg" id="sTe-cY-5oL"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-FZ-Zfs" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                <rect key="frame" x="33" y="300" width="309" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="Choose Character Race">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CN8-dY-3Vl">
+                                <rect key="frame" x="0.0" y="352" width="375" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="lSx-hy-BRT"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="lUR-8B-QDg" id="v7M-u3-8Kz"/>
+                                    <outlet property="delegate" destination="lUR-8B-QDg" id="vSw-H0-DLq"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atF-YG-WJk" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                <rect key="frame" x="33" y="535" width="309" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="9Hm-2s-FIE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <state key="normal" title="Save Race and Class">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SaveRaceAndClassButtonTapped:" destination="lUR-8B-QDg" eventType="touchUpInside" id="wa6-8e-Tze"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c49-3u-Qkq" firstAttribute="trailing" secondItem="Ifv-FZ-Zfs" secondAttribute="trailing" constant="33" id="3SW-vq-9wk"/>
+                            <constraint firstItem="CN8-dY-3Vl" firstAttribute="top" secondItem="Ifv-FZ-Zfs" secondAttribute="bottom" constant="16" id="5Cs-SF-KWA"/>
+                            <constraint firstItem="CN8-dY-3Vl" firstAttribute="leading" secondItem="c49-3u-Qkq" secondAttribute="leading" id="Aih-ov-gTG"/>
+                            <constraint firstItem="Ifv-FZ-Zfs" firstAttribute="top" secondItem="CI3-yR-ele" secondAttribute="bottom" constant="66" id="IL8-Tw-esS"/>
+                            <constraint firstItem="c49-3u-Qkq" firstAttribute="trailing" secondItem="CN8-dY-3Vl" secondAttribute="trailing" id="NBB-LY-B3Q"/>
+                            <constraint firstItem="Ifv-FZ-Zfs" firstAttribute="leading" secondItem="c49-3u-Qkq" secondAttribute="leading" constant="33" id="QVJ-Lm-wi9"/>
+                            <constraint firstItem="c49-3u-Qkq" firstAttribute="trailing" secondItem="atF-YG-WJk" secondAttribute="trailing" constant="33" id="a93-VT-V7c"/>
+                            <constraint firstItem="CI3-yR-ele" firstAttribute="top" secondItem="WoI-du-yVi" secondAttribute="bottom" constant="16" id="c4Q-K5-Rhm"/>
+                            <constraint firstItem="c49-3u-Qkq" firstAttribute="bottom" secondItem="atF-YG-WJk" secondAttribute="bottom" constant="33" id="ehf-w6-IAO"/>
+                            <constraint firstItem="atF-YG-WJk" firstAttribute="leading" secondItem="c49-3u-Qkq" secondAttribute="leading" constant="33" id="nkF-Af-r67"/>
+                            <constraint firstItem="WoI-du-yVi" firstAttribute="leading" secondItem="c49-3u-Qkq" secondAttribute="leading" constant="33" id="nzJ-93-aCf"/>
+                            <constraint firstItem="CI3-yR-ele" firstAttribute="trailing" secondItem="c49-3u-Qkq" secondAttribute="trailing" id="stH-ks-IBk"/>
+                            <constraint firstItem="WoI-du-yVi" firstAttribute="top" secondItem="c49-3u-Qkq" secondAttribute="top" constant="33" id="tXT-Sf-FoP"/>
+                            <constraint firstItem="CI3-yR-ele" firstAttribute="leading" secondItem="c49-3u-Qkq" secondAttribute="leading" id="uaG-lK-OHa"/>
+                            <constraint firstItem="c49-3u-Qkq" firstAttribute="trailing" secondItem="WoI-du-yVi" secondAttribute="trailing" constant="33" id="yiL-Ka-t1P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c49-3u-Qkq"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                <color key="value" red="0.89019607840000003" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                <color key="value" red="0.23137254900000001" green="0.1333333333" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="ClassPicker" destination="CN8-dY-3Vl" id="DXO-mL-LMY"/>
+                        <outlet property="RacePicker" destination="CI3-yR-ele" id="EL7-jd-BVe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AH9-ii-OjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="58"/>
+        </scene>
+    </scenes>
+</document>

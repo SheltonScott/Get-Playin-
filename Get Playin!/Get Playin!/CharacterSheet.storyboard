@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Character Sheet View Controller-->
+        <scene sceneID="aDs-BP-eUJ">
+            <objects>
+                <viewController storyboardIdentifier="characterSheetStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i6Y-Ge-TbA" customClass="CharacterSheetViewController" customModule="Get_Playin_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xI1-UV-T1e" customClass="DesignableView" customModule="Get_Playin_" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YI-xP-MWK" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                <rect key="frame" x="33" y="535" width="309" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="Pzf-n3-Sg1"/>
+                                </constraints>
+                                <state key="normal" image="constructionSign">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SaveAndExitButtonTapped:" destination="i6Y-Ge-TbA" eventType="touchUpInside" id="odN-Y4-3q7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idc-Np-LR1" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                <rect key="frame" x="33" y="119" width="132" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="LEg-9D-FKI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="Name">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mAU-Z9-ica" customClass="DesignableTextField" customModule="Get_Playin_" customModuleProvider="target">
+                                <rect key="frame" x="198" y="119" width="132" height="36"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="PMT-FP-5HV"/>
+                                    <constraint firstAttribute="width" constant="132" id="oVm-h4-ao3"/>
+                                </constraints>
+                                <color key="textColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zX3-h2-V5K" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                <rect key="frame" x="33" y="188" width="132" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="TXc-9P-53t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="Race">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1J-bf-mzT" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                <rect key="frame" x="198" y="188" width="132" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="s0f-fZ-asU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="Race">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIP-De-IGi" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                <rect key="frame" x="33" y="257" width="132" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="JQn-i6-eGE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="Class">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWd-aZ-dTR" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                <rect key="frame" x="198" y="257" width="132" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="MQP-wf-WH6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <state key="normal" title="Class">
+                                    <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to traverse between pages!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCy-fP-e75">
+                                <rect key="frame" x="33" y="20" width="309" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="1Bg-zk-fT9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="PCy-fP-e75" firstAttribute="top" secondItem="WXy-NM-615" secondAttribute="top" id="0RJ-ee-MWM"/>
+                            <constraint firstItem="A1J-bf-mzT" firstAttribute="top" secondItem="mAU-Z9-ica" secondAttribute="bottom" constant="33" id="3b9-ut-H34"/>
+                            <constraint firstItem="PCy-fP-e75" firstAttribute="leading" secondItem="WXy-NM-615" secondAttribute="leading" constant="33" id="4eF-2q-JBA"/>
+                            <constraint firstItem="mAU-Z9-ica" firstAttribute="top" secondItem="WXy-NM-615" secondAttribute="top" constant="99" id="B3k-OT-i9H"/>
+                            <constraint firstItem="WXy-NM-615" firstAttribute="trailing" secondItem="9YI-xP-MWK" secondAttribute="trailing" constant="33" id="CSq-2e-bjI"/>
+                            <constraint firstItem="zX3-h2-V5K" firstAttribute="top" secondItem="idc-Np-LR1" secondAttribute="bottom" constant="33" id="D4M-dP-DYf"/>
+                            <constraint firstItem="WXy-NM-615" firstAttribute="bottom" secondItem="9YI-xP-MWK" secondAttribute="bottom" constant="33" id="EFb-ZU-zve"/>
+                            <constraint firstItem="idc-Np-LR1" firstAttribute="top" secondItem="WXy-NM-615" secondAttribute="top" constant="99" id="ELG-ah-zqz"/>
+                            <constraint firstItem="A1J-bf-mzT" firstAttribute="leading" secondItem="zX3-h2-V5K" secondAttribute="trailing" constant="33" id="FUD-Jm-sc1"/>
+                            <constraint firstItem="WXy-NM-615" firstAttribute="trailing" secondItem="PCy-fP-e75" secondAttribute="trailing" constant="33" id="HJz-Gi-wag"/>
+                            <constraint firstItem="qWd-aZ-dTR" firstAttribute="top" secondItem="A1J-bf-mzT" secondAttribute="bottom" constant="33" id="QmS-EG-981"/>
+                            <constraint firstItem="BIP-De-IGi" firstAttribute="leading" secondItem="WXy-NM-615" secondAttribute="leading" constant="33" id="Rho-cY-s5j"/>
+                            <constraint firstItem="zX3-h2-V5K" firstAttribute="leading" secondItem="WXy-NM-615" secondAttribute="leading" constant="33" id="VJd-ND-9pg"/>
+                            <constraint firstItem="qWd-aZ-dTR" firstAttribute="leading" secondItem="BIP-De-IGi" secondAttribute="trailing" constant="33" id="Wgj-cd-GBP"/>
+                            <constraint firstItem="9YI-xP-MWK" firstAttribute="leading" secondItem="WXy-NM-615" secondAttribute="leading" constant="33" id="cd3-KC-ddw"/>
+                            <constraint firstItem="idc-Np-LR1" firstAttribute="leading" secondItem="WXy-NM-615" secondAttribute="leading" constant="33" id="f8S-vY-TAX"/>
+                            <constraint firstItem="BIP-De-IGi" firstAttribute="top" secondItem="zX3-h2-V5K" secondAttribute="bottom" constant="33" id="mhe-UZ-xhd"/>
+                            <constraint firstItem="mAU-Z9-ica" firstAttribute="leading" secondItem="idc-Np-LR1" secondAttribute="trailing" constant="33" id="nT3-Gx-Igu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WXy-NM-615"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                <color key="value" red="0.89019607840000003" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                <color key="value" red="0.23137254900000001" green="0.1333333333" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="CharismaModifier" destination="Fd9-xf-QBk" id="xME-pg-90X"/>
+                        <outlet property="CharismaScore" destination="LLY-b5-dat" id="YUF-NQ-uV2"/>
+                        <outlet property="ClassView" destination="qWd-aZ-dTR" id="glN-gG-q61"/>
+                        <outlet property="ConstitutionModifier" destination="6zD-6G-g1u" id="v0f-My-T4M"/>
+                        <outlet property="ConstitutionScore" destination="K5v-I4-VPb" id="DGy-d9-oMk"/>
+                        <outlet property="DexterityModifier" destination="mHk-Dp-YAD" id="cWx-mv-s74"/>
+                        <outlet property="DexterityScore" destination="dtd-TM-KcN" id="VoP-ju-wce"/>
+                        <outlet property="IntelligenceModifier" destination="gOu-Le-m5S" id="RYK-No-Dwi"/>
+                        <outlet property="IntelligenceScore" destination="kZ9-uV-cJR" id="M1k-g6-ilC"/>
+                        <outlet property="RaceView" destination="A1J-bf-mzT" id="ml2-jm-PcM"/>
+                        <outlet property="SheetOneView" destination="xI1-UV-T1e" id="Ux9-me-rXg"/>
+                        <outlet property="SheetTwoView" destination="j2R-3a-o3J" id="f8f-fS-ybm"/>
+                        <outlet property="StrengthModifier" destination="Usb-z7-OdR" id="uV5-Uo-iCw"/>
+                        <outlet property="StrengthScore" destination="nz8-MO-tax" id="v0w-LW-g4Z"/>
+                        <outlet property="WisdomModifier" destination="oEg-MR-Rla" id="P3q-ea-QOn"/>
+                        <outlet property="WisdomScore" destination="Qtc-18-EQP" id="utk-uu-6PU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xop-IB-FE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="j2R-3a-o3J" customClass="DesignableView" customModule="Get_Playin_" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wp-mS-sPZ" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="33" y="433" width="165" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="NDz-dR-qfp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="Charisma">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0w-rD-vZL" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="33" y="364" width="165" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="99a-2c-42U"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="Wisdom">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hep-Kh-TP2" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="33" y="295" width="165" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="o6o-an-WSF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="Intelligence">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRQ-5E-lJD" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="33" y="226" width="165" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="wAZ-S8-kwi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="Constitution">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCo-Lq-qbc" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="33" y="157" width="165" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="G2R-QX-dpZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="Dexterity">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVj-Uj-RQG" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="33" y="88" width="165" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="TiQ-DO-lK9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="Strength">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd9-xf-QBk" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="231" y="433" width="33" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="RDE-ku-z16"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="+0">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLY-b5-dat" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="297" y="433" width="33" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="ijs-Uz-4wi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEg-MR-Rla" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="231" y="364" width="33" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="wNm-r2-eIn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="+0">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtc-18-EQP" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="297" y="364" width="33" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="tWE-mv-ECY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOu-Le-m5S" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="231" y="295" width="33" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="WR8-B1-J0r"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="+0">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZ9-uV-cJR" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="297" y="295" width="33" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="ZcU-nt-Z5o"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zD-6G-g1u" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="231" y="226" width="33" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="wdc-E8-8Rn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="+0">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5v-I4-VPb" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="297" y="226" width="33" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="eb4-63-36c"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHk-Dp-YAD" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="231" y="157" width="33" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="9Bm-Wl-chW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="+0">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtd-TM-KcN" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="297" y="157" width="33" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="Nep-L9-csW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usb-z7-OdR" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="231" y="88" width="33" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="Wsw-VG-3Je"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="+0">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz8-MO-tax" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                            <rect key="frame" x="297" y="88" width="33" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="NsG-fV-x1o"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <state key="normal" title="00">
+                                <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                    <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                    <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="constructionSign" translatesAutoresizingMaskIntoConstraints="NO" id="M3R-mO-rhF">
+                            <rect key="frame" x="33" y="485" width="309" height="149"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="309" id="IwN-Je-KvB"/>
+                                <constraint firstAttribute="height" constant="149" id="YMR-Za-TP4"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gOu-Le-m5S" firstAttribute="leading" secondItem="hep-Kh-TP2" secondAttribute="trailing" constant="33" id="0rg-ey-7Qa"/>
+                        <constraint firstItem="kZ9-uV-cJR" firstAttribute="leading" secondItem="gOu-Le-m5S" secondAttribute="trailing" constant="33" id="1Eg-5S-fDX"/>
+                        <constraint firstItem="LLY-b5-dat" firstAttribute="top" secondItem="Qtc-18-EQP" secondAttribute="bottom" constant="33" id="3yg-d5-cgq"/>
+                        <constraint firstItem="iRQ-5E-lJD" firstAttribute="top" secondItem="cCo-Lq-qbc" secondAttribute="bottom" constant="33" id="4TE-M7-l9M"/>
+                        <constraint firstItem="mHk-Dp-YAD" firstAttribute="top" secondItem="Usb-z7-OdR" secondAttribute="bottom" constant="33" id="64S-5d-6oM"/>
+                        <constraint firstItem="LVU-9g-fCI" firstAttribute="bottom" secondItem="6wp-mS-sPZ" secondAttribute="bottom" constant="198" id="7O9-uF-nkj"/>
+                        <constraint firstItem="6wp-mS-sPZ" firstAttribute="top" secondItem="c0w-rD-vZL" secondAttribute="bottom" constant="33" id="7eN-oz-MGC"/>
+                        <constraint firstItem="kZ9-uV-cJR" firstAttribute="top" secondItem="K5v-I4-VPb" secondAttribute="bottom" constant="33" id="7wG-Iz-MTy"/>
+                        <constraint firstItem="Qtc-18-EQP" firstAttribute="top" secondItem="kZ9-uV-cJR" secondAttribute="bottom" constant="33" id="9bb-xo-tjx"/>
+                        <constraint firstItem="LLY-b5-dat" firstAttribute="leading" secondItem="Fd9-xf-QBk" secondAttribute="trailing" constant="33" id="B29-mI-aiX"/>
+                        <constraint firstItem="Usb-z7-OdR" firstAttribute="leading" secondItem="VVj-Uj-RQG" secondAttribute="trailing" constant="33" id="Bnl-vG-3g1"/>
+                        <constraint firstItem="cCo-Lq-qbc" firstAttribute="top" secondItem="VVj-Uj-RQG" secondAttribute="bottom" constant="33" id="HZC-sq-ige"/>
+                        <constraint firstItem="nz8-MO-tax" firstAttribute="leading" secondItem="Usb-z7-OdR" secondAttribute="trailing" constant="33" id="HhI-7A-NZs"/>
+                        <constraint firstItem="c0w-rD-vZL" firstAttribute="top" secondItem="hep-Kh-TP2" secondAttribute="bottom" constant="33" id="J9q-vP-FKS"/>
+                        <constraint firstItem="LVU-9g-fCI" firstAttribute="bottom" secondItem="LLY-b5-dat" secondAttribute="bottom" constant="198" id="Mz8-c3-aPn"/>
+                        <constraint firstItem="Fd9-xf-QBk" firstAttribute="top" secondItem="oEg-MR-Rla" secondAttribute="bottom" constant="33" id="N1N-Mz-EG5"/>
+                        <constraint firstItem="Fd9-xf-QBk" firstAttribute="leading" secondItem="6wp-mS-sPZ" secondAttribute="trailing" constant="33" id="OEH-gA-Okk"/>
+                        <constraint firstItem="K5v-I4-VPb" firstAttribute="top" secondItem="dtd-TM-KcN" secondAttribute="bottom" constant="33" id="Oew-xm-4fV"/>
+                        <constraint firstItem="LVU-9g-fCI" firstAttribute="bottom" secondItem="M3R-mO-rhF" secondAttribute="bottom" constant="33" id="Ovz-rG-qex"/>
+                        <constraint firstItem="c0w-rD-vZL" firstAttribute="leading" secondItem="LVU-9g-fCI" secondAttribute="leading" constant="33" id="QBQ-AL-I2z"/>
+                        <constraint firstItem="cCo-Lq-qbc" firstAttribute="leading" secondItem="LVU-9g-fCI" secondAttribute="leading" constant="33" id="RcR-wV-LZp"/>
+                        <constraint firstItem="VVj-Uj-RQG" firstAttribute="leading" secondItem="LVU-9g-fCI" secondAttribute="leading" constant="33" id="SRk-Ob-ULj"/>
+                        <constraint firstItem="K5v-I4-VPb" firstAttribute="leading" secondItem="6zD-6G-g1u" secondAttribute="trailing" constant="33" id="VGg-tI-Qpx"/>
+                        <constraint firstItem="M3R-mO-rhF" firstAttribute="leading" secondItem="LVU-9g-fCI" secondAttribute="leading" constant="33" id="XM6-G3-Xdz"/>
+                        <constraint firstItem="dtd-TM-KcN" firstAttribute="leading" secondItem="mHk-Dp-YAD" secondAttribute="trailing" constant="33" id="ZeH-tJ-avP"/>
+                        <constraint firstItem="LVU-9g-fCI" firstAttribute="trailing" secondItem="M3R-mO-rhF" secondAttribute="trailing" constant="33" id="aCv-O2-wZ7"/>
+                        <constraint firstItem="iRQ-5E-lJD" firstAttribute="leading" secondItem="LVU-9g-fCI" secondAttribute="leading" constant="33" id="aHG-aU-Spe"/>
+                        <constraint firstItem="6wp-mS-sPZ" firstAttribute="leading" secondItem="LVU-9g-fCI" secondAttribute="leading" constant="33" id="bHc-iI-lXR"/>
+                        <constraint firstItem="6zD-6G-g1u" firstAttribute="top" secondItem="mHk-Dp-YAD" secondAttribute="bottom" constant="33" id="e3P-Az-Iqn"/>
+                        <constraint firstItem="Qtc-18-EQP" firstAttribute="leading" secondItem="oEg-MR-Rla" secondAttribute="trailing" constant="33" id="fkt-Mf-Ik2"/>
+                        <constraint firstItem="oEg-MR-Rla" firstAttribute="top" secondItem="gOu-Le-m5S" secondAttribute="bottom" constant="33" id="iNV-Ua-BUu"/>
+                        <constraint firstItem="gOu-Le-m5S" firstAttribute="top" secondItem="6zD-6G-g1u" secondAttribute="bottom" constant="33" id="nLO-jZ-RL7"/>
+                        <constraint firstItem="oEg-MR-Rla" firstAttribute="leading" secondItem="c0w-rD-vZL" secondAttribute="trailing" constant="33" id="piS-PZ-B29"/>
+                        <constraint firstItem="mHk-Dp-YAD" firstAttribute="leading" secondItem="cCo-Lq-qbc" secondAttribute="trailing" constant="33" id="rFa-Fc-yrl"/>
+                        <constraint firstItem="6zD-6G-g1u" firstAttribute="leading" secondItem="iRQ-5E-lJD" secondAttribute="trailing" constant="33" id="rHd-0k-aaG"/>
+                        <constraint firstItem="LVU-9g-fCI" firstAttribute="bottom" secondItem="Fd9-xf-QBk" secondAttribute="bottom" constant="198" id="s2M-7p-Tnc"/>
+                        <constraint firstItem="hep-Kh-TP2" firstAttribute="leading" secondItem="LVU-9g-fCI" secondAttribute="leading" constant="33" id="tDB-PS-Tcz"/>
+                        <constraint firstItem="hep-Kh-TP2" firstAttribute="top" secondItem="iRQ-5E-lJD" secondAttribute="bottom" constant="33" id="tWh-Pe-O4m"/>
+                        <constraint firstItem="dtd-TM-KcN" firstAttribute="top" secondItem="nz8-MO-tax" secondAttribute="bottom" constant="33" id="vIy-bQ-sf2"/>
+                        <constraint firstItem="M3R-mO-rhF" firstAttribute="top" secondItem="6wp-mS-sPZ" secondAttribute="bottom" constant="16" id="yB9-KK-8sV"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="LVU-9g-fCI"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                            <color key="value" red="0.89019607840000003" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                            <color key="value" red="0.23137254900000001" green="0.1333333333" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="42" y="-12"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="constructionSign" width="263" height="191"/>
+    </resources>
+</document>
