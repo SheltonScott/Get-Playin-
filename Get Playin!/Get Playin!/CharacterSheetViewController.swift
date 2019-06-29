@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class CharacterSheetViewController: UIViewController {
     
-    
+    var ref: DatabaseReference!
     
     @IBOutlet weak var StrengthScore: DesignableButton!
     @IBOutlet weak var DexterityScore: DesignableButton!
@@ -28,6 +30,7 @@ class CharacterSheetViewController: UIViewController {
     
     @IBOutlet weak var RaceView: DesignableButton!
     @IBOutlet weak var ClassView: DesignableButton!
+    @IBOutlet weak var NameView: DesignableTextField!
     
     @IBOutlet var SheetOneView: DesignableView!
     @IBOutlet var SheetTwoView: DesignableView!
@@ -37,6 +40,7 @@ class CharacterSheetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        ref = Database.database().reference()
         
         StrengthScore.setTitle(defaults.string(forKey: defaultsKeys.keyAbilityOne), for: .normal)
         DexterityScore.setTitle(defaults.string(forKey: defaultsKeys.keyAbilityTwo), for: .normal)
@@ -221,5 +225,11 @@ class CharacterSheetViewController: UIViewController {
     }
     
     @IBAction func SaveAndExitButtonTapped(_ sender: Any) {
+        self.ref.child("Character/Name").setValue(NameView.text)
+        self.ref.child("Character/Race").setValue(RaceView.currentTitle)
+        self.ref.child("Character/Class").setValue(ClassView.currentTitle)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "mainStoryboard") as UIViewController
+        present(vc, animated: true, completion: nil)
     }
 }

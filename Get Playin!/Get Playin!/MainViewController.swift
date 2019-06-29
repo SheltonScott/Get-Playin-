@@ -7,16 +7,33 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class MainViewController: UIViewController {
     
+    var ref: DatabaseReference!
+    
     @IBOutlet weak var NewCharacterButton: DesignableButton!
     @IBOutlet weak var SnapshotTextView: UITextView!
+    @IBOutlet weak var PreviousCharacterButton: DesignableButton!
+    
+    var characterName = ""
+    var characterRace = ""
+    var characterClass = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        SnapshotTextView.text = "Tap New Character Button to Get Playin!"
+        ref = Database.database().reference()
+        
+        SnapshotTextView.text = "Previous Character functionality is currently under construction!"
+        
+        self.ref.child("Character/Name").observeSingleEvent(of: .value) {
+            (snapshot) in
+            self.characterName = (snapshot.value as? String)!
+            self.PreviousCharacterButton.setTitle(self.characterName, for: .normal)
+        }
     }
     
     @IBAction func NewCharacterButtonTapped(_ sender: Any) {

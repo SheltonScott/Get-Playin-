@@ -70,11 +70,26 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="constructionSign" translatesAutoresizingMaskIntoConstraints="NO" id="eyV-1A-q6F">
-                                        <rect key="frame" x="67" y="319" width="240" height="128"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SS-2S-Ogl" customClass="DesignableButton" customModule="Get_Playin_" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="363" width="177" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" red="0.84705882349999995" green="0.63137254899999995" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" red="0.31764705879999999" green="0.1960784314" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="constructionSign" translatesAutoresizingMaskIntoConstraints="NO" id="KSp-aw-mqG">
+                                        <rect key="frame" x="67" y="272" width="240" height="83"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="dfI-qq-bdW"/>
-                                            <constraint firstAttribute="height" constant="128" id="gTN-fu-FrK"/>
+                                            <constraint firstAttribute="height" constant="83" id="LiG-7g-5L5"/>
+                                            <constraint firstAttribute="width" constant="240" id="tLO-no-LY7"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -82,14 +97,18 @@
                                 <constraints>
                                     <constraint firstItem="qCT-2A-WgW" firstAttribute="leading" secondItem="8AN-fS-UOY" secondAttribute="leading" constant="33" id="4uO-up-jYc"/>
                                     <constraint firstAttribute="trailing" secondItem="aQm-mD-dnp" secondAttribute="trailing" constant="33" id="6Cw-Q3-Tn5"/>
-                                    <constraint firstItem="aQm-mD-dnp" firstAttribute="top" secondItem="eyV-1A-q6F" secondAttribute="bottom" constant="68" id="A5J-a2-L1b"/>
                                     <constraint firstItem="qCT-2A-WgW" firstAttribute="top" secondItem="8AN-fS-UOY" secondAttribute="top" constant="33" id="G5N-y3-Xvk"/>
-                                    <constraint firstItem="eyV-1A-q6F" firstAttribute="top" secondItem="qCT-2A-WgW" secondAttribute="bottom" constant="55" id="LGI-4o-JZY"/>
                                     <constraint firstAttribute="bottom" secondItem="aQm-mD-dnp" secondAttribute="bottom" constant="33" id="Mn9-KV-9YV"/>
+                                    <constraint firstItem="KSp-aw-mqG" firstAttribute="leading" secondItem="8AN-fS-UOY" secondAttribute="leading" constant="67" id="NNz-on-iR2"/>
                                     <constraint firstAttribute="trailing" secondItem="qCT-2A-WgW" secondAttribute="trailing" constant="33" id="NS1-IE-kOC"/>
-                                    <constraint firstAttribute="trailing" secondItem="eyV-1A-q6F" secondAttribute="trailing" constant="68" id="YcE-Tb-O2Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="9SS-2S-Ogl" secondAttribute="trailing" constant="99" id="QbB-Ai-MWT"/>
+                                    <constraint firstItem="aQm-mD-dnp" firstAttribute="top" secondItem="9SS-2S-Ogl" secondAttribute="bottom" constant="99" id="Sfz-Iy-QFp"/>
+                                    <constraint firstItem="9SS-2S-Ogl" firstAttribute="leading" secondItem="8AN-fS-UOY" secondAttribute="leading" constant="99" id="Soq-nB-xl2"/>
+                                    <constraint firstAttribute="trailing" secondItem="KSp-aw-mqG" secondAttribute="trailing" constant="68" id="Suw-tv-3BW"/>
+                                    <constraint firstItem="KSp-aw-mqG" firstAttribute="top" secondItem="qCT-2A-WgW" secondAttribute="bottom" constant="8" id="Wmc-rR-MoU"/>
                                     <constraint firstItem="aQm-mD-dnp" firstAttribute="leading" secondItem="8AN-fS-UOY" secondAttribute="leading" constant="33" id="ZzN-dt-Kea"/>
-                                    <constraint firstItem="eyV-1A-q6F" firstAttribute="leading" secondItem="8AN-fS-UOY" secondAttribute="leading" constant="67" id="wBJ-IH-VB1"/>
+                                    <constraint firstItem="9SS-2S-Ogl" firstAttribute="top" secondItem="qCT-2A-WgW" secondAttribute="bottom" constant="99" id="bN0-8g-gR5"/>
+                                    <constraint firstItem="9SS-2S-Ogl" firstAttribute="top" secondItem="KSp-aw-mqG" secondAttribute="bottom" constant="8" id="vGu-vz-aVj"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
@@ -112,11 +131,13 @@
                     </view>
                     <connections>
                         <outlet property="NewCharacterButton" destination="aQm-mD-dnp" id="qB7-Li-YbK"/>
+                        <outlet property="PreviousCharacterButton" destination="9SS-2S-Ogl" id="dCE-VS-p6o"/>
                         <outlet property="SnapshotTextView" destination="UvE-51-JwV" id="un4-nF-aah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
     <resources>
