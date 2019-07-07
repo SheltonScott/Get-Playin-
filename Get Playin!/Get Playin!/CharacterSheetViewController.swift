@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class CharacterSheetViewController: UIViewController {
+class CharacterSheetViewController: UIViewController, UITextFieldDelegate {
     
     var ref: DatabaseReference!
     
@@ -30,7 +30,7 @@ class CharacterSheetViewController: UIViewController {
     
     @IBOutlet weak var RaceView: DesignableButton!
     @IBOutlet weak var ClassView: DesignableButton!
-    @IBOutlet weak var NameView: DesignableTextField!
+    @IBOutlet weak var NameView: UITextField!
     
     @IBOutlet var SheetOneView: DesignableView!
     @IBOutlet var SheetTwoView: DesignableView!
@@ -60,6 +60,8 @@ class CharacterSheetViewController: UIViewController {
         
         view.addGestureRecognizer(leftSwipe)
         view.addGestureRecognizer(rightSwipe)
+        
+        NameView.delegate = self
         
         if Int(StrengthScore.currentTitle!) == 20{
             StrengthModifier.setTitle("+5", for: .normal)
@@ -222,6 +224,14 @@ class CharacterSheetViewController: UIViewController {
         if (sender.direction == .right) {
             self.SheetTwoView.removeFromSuperview()
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        //or
+        //self.view.endEditing(true)
+        return true
     }
     
     @IBAction func SaveAndExitButtonTapped(_ sender: Any) {
